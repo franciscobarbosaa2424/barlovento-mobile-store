@@ -7,11 +7,27 @@
     <ProjectGuid>{990B3ED7-8D97-4348-B6F4-CCB28AF7CA51}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>ProyectoBarloventoReparacel</RootNamespace>
-    <AssemblyName>ProyectoBarloventoReparacel</AssemblyName>
+    <AssemblyName>Barlovento Reparacel</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Proyecto Barlovento Reparacel\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,9 +48,90 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icono.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D02A67EBF2AC802F360235804DF2DE08B71BE732</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ProyectoBarloventoReparacel_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="EcmaScript.NET, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EcmaScript.NET.2.0.0\lib\net45\EcmaScript.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython, Version=3.4.1.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronPython.3.4.1\lib\net462\IronPython.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.Modules, Version=3.4.1.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronPython.3.4.1\lib\net462\IronPython.Modules.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.SQLite, Version=3.4.1.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronPython.3.4.1\lib\net462\IronPython.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.Wpf, Version=3.4.1.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronPython.3.4.1\lib\net462\IronPython.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itextsharp.xmlworker.5.5.13.4\lib\net461\itextsharp.xmlworker.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Dynamic, Version=1.3.4.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\DynamicLanguageRuntime.1.3.4\lib\net452\Microsoft.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting, Version=1.3.4.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\DynamicLanguageRuntime.1.3.4\lib\net452\Microsoft.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting.Metadata, Version=1.3.4.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\DynamicLanguageRuntime.1.3.4\lib\net452\Microsoft.Scripting.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Python.Runtime, Version=3.0.3.0, Culture=neutral, PublicKeyToken=5000fea6cba702dd, processorArchitecture=MSIL">
+      <HintPath>..\packages\pythonnet.3.0.3\lib\netstandard2.0\Python.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.1\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,32 +143,297 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dominio\Cliente.cs" />
-    <Compile Include="Dominio\ClienteNormal.cs" />
-    <Compile Include="Dominio\Dispositivo.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vistas\frmCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\frmCliente.Designer.cs">
-      <DependentUpon>frmCliente.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
+    <Compile Include="Dominio\Dominio_Controladoras\Cliente_Controladora.cs" />
+    <Compile Include="Dominio\Dominio_Controladoras\Dispositivo_Controladora.cs" />
+    <Compile Include="Dominio\Dominio_Controladoras\Movimientos_Controladora.cs" />
+    <Compile Include="Dominio\Dominio_Controladoras\Orden_De_Reparacion_Controladora.cs" />
+    <Compile Include="Dominio\Dominio_Entidades\Movimientos.cs" />
+    <Compile Include="Persistencia\Persistencia_Controladoras\Persistencia_Cliente_Controladora.cs" />
+    <Compile Include="Dominio\Dominio_Entidades\Cliente.cs" />
+    <Compile Include="Dominio\Dominio_Entidades\Dispositivo.cs" />
+    <Compile Include="Dominio\Dominio_Entidades\OrdenDeReparacion.cs" />
+    <Compile Include="Persistencia\Persistencia_Controladoras\Persistencia_Movimientos_Controladora.cs" />
+    <Compile Include="Persistencia\Persistencia_Controladoras\Persistencia_Orden_De_Reparacion_Controladora.cs" />
+    <Compile Include="Persistencia\Persistencia_Entidades\Persistencia_Movimientos.cs" />
+    <Compile Include="Persistencia\Persistencia_Entidades\Persistencia_Orden_De_Reparacion.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\frmAjustes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\frmAjustes.Designer.cs">
+      <DependentUpon>frmAjustes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Clientes\Agregar\frmAgregarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Clientes\Agregar\frmAgregarCliente.Designer.cs">
+      <DependentUpon>frmAgregarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Clientes\Seleccionar\frmSeleccionarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Clientes\Seleccionar\frmSeleccionarCliente.Designer.cs">
+      <DependentUpon>frmSeleccionarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Dispositivos\Agregar\frmAgregarDispositivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Dispositivos\Agregar\frmAgregarDispositivo.Designer.cs">
+      <DependentUpon>frmAgregarDispositivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Dispositivos\Home\frmDispositivosHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Dispositivos\Home\frmDispositivosHome.Designer.cs">
+      <DependentUpon>frmDispositivosHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\frmIniciarSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\frmIniciarSesion.Designer.cs">
+      <DependentUpon>frmIniciarSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Persistencia\Conexion.cs" />
+    <Compile Include="Persistencia\Persistencia_Controladoras\Persistencia_Dispositivo_Controladora.cs" />
+    <Compile Include="Persistencia\Persistencia_Entidades\Persistencia_Cliente.cs" />
+    <Compile Include="Persistencia\Persistencia_Entidades\Persistencia_Dispositivo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vistas\Vistas_Clientes\Home\frmClientesHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Clientes\Home\frmClientesHome.Designer.cs">
+      <DependentUpon>frmClientesHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Clientes\Modificar\frmModificarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Clientes\Modificar\frmModificarCliente.Designer.cs">
+      <DependentUpon>frmModificarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Dispositivos\Modificar\frmModificarDispositivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Dispositivos\Modificar\frmModificarDispositivo.Designer.cs">
+      <DependentUpon>frmModificarDispositivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Dispositivos\Patron\frmPatronDispositivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Dispositivos\Patron\frmPatronDispositivo.Designer.cs">
+      <DependentUpon>frmPatronDispositivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Dispositivos\VerContraseñaPatron\frmContAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Dispositivos\VerContraseñaPatron\frmContAdmin.Designer.cs">
+      <DependentUpon>frmContAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Dispositivos\VerContraseñaPatron\frmVerPatron.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Dispositivos\VerContraseñaPatron\frmVerPatron.Designer.cs">
+      <DependentUpon>frmVerPatron.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Estadisticas\frmMovXMes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Estadisticas\frmMovXMes.Designer.cs">
+      <DependentUpon>frmMovXMes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Estadisticas\frmOrdXMes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Estadisticas\frmOrdXMes.Designer.cs">
+      <DependentUpon>frmOrdXMes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Movimientos\Agregar\frmAgregarMovimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Movimientos\Agregar\frmAgregarMovimiento.Designer.cs">
+      <DependentUpon>frmAgregarMovimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Movimientos\Filtros\frmFiltrosMov.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Movimientos\Filtros\frmFiltrosMov.Designer.cs">
+      <DependentUpon>frmFiltrosMov.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Movimientos\Home\frmMovimientosHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Vistas_Movimientos\Home\frmMovimientosHome.Designer.cs">
+      <DependentUpon>frmMovimientosHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Vistas_OrdenReparacion\Filtros\frmFiltrosOrden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Vistas_OrdenReparacion\Filtros\frmFiltrosOrden.Designer.cs">
+      <DependentUpon>frmFiltrosOrden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Vistas_OrdenReparacion\Imagen\frmVerImagen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Vistas_OrdenReparacion\Imagen\frmVerImagen.Designer.cs">
+      <DependentUpon>frmVerImagen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Vistas_OrdenReparacion\Infn\frmInfnCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Vistas_OrdenReparacion\Infn\frmInfnCliente.Designer.cs">
+      <DependentUpon>frmInfnCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Vistas_OrdenReparacion\Infn\frmInfnDispositivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Vistas_OrdenReparacion\Infn\frmInfnDispositivo.Designer.cs">
+      <DependentUpon>frmInfnDispositivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Vistas_OrdenReparacion\Infn\frmInfnOrden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Vistas_OrdenReparacion\Infn\frmInfnOrden.Designer.cs">
+      <DependentUpon>frmInfnOrden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Vistas_OrdenReparacion\Seleccionar\frmSeleccionarDispositivoOrden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Vistas_OrdenReparacion\Seleccionar\frmSeleccionarDispositivoOrden.Designer.cs">
+      <DependentUpon>frmSeleccionarDispositivoOrden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Vistas_OrdenReparacion\Agregar\frmAgregarOrdenReparacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Vistas_OrdenReparacion\Agregar\frmAgregarOrdenReparacion.Designer.cs">
+      <DependentUpon>frmAgregarOrdenReparacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Vistas_OrdenReparacion\GenerarMovimiento\frmGenerarMovimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Vistas_OrdenReparacion\GenerarMovimiento\frmGenerarMovimiento.Designer.cs">
+      <DependentUpon>frmGenerarMovimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Vistas_OrdenReparacion\Home\frmOrdenReparacionHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Vistas_OrdenReparacion\Home\frmOrdenReparacionHome.Designer.cs">
+      <DependentUpon>frmOrdenReparacionHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Vistas_OrdenReparacion\Modificar\frmModificarOrdenReparacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Vistas_OrdenReparacion\Modificar\frmModificarOrdenReparacion.Designer.cs">
+      <DependentUpon>frmModificarOrdenReparacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Vistas_OrdenReparacion\WhatsApp\frmMensajeWhatsApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Vistas_OrdenReparacion\WhatsApp\frmMensajeWhatsApp.Designer.cs">
+      <DependentUpon>frmMensajeWhatsApp.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Vistas\frmAjustes.resx">
+      <DependentUpon>frmAjustes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Vistas_Clientes\Agregar\frmAgregarCliente.resx">
+      <DependentUpon>frmAgregarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Vistas_Clientes\Seleccionar\frmSeleccionarCliente.resx">
+      <DependentUpon>frmSeleccionarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Vistas_Dispositivos\Agregar\frmAgregarDispositivo.resx">
+      <DependentUpon>frmAgregarDispositivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Vistas_Dispositivos\Home\frmDispositivosHome.resx">
+      <DependentUpon>frmDispositivosHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\frmIniciarSesion.resx">
+      <DependentUpon>frmIniciarSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Vistas_Clientes\Home\frmClientesHome.resx">
+      <DependentUpon>frmClientesHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Vistas_Clientes\Modificar\frmModificarCliente.resx">
+      <DependentUpon>frmModificarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Vistas_Dispositivos\Modificar\frmModificarDispositivo.resx">
+      <DependentUpon>frmModificarDispositivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Vistas_Dispositivos\Patron\frmPatronDispositivo.resx">
+      <DependentUpon>frmPatronDispositivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Vistas_Dispositivos\VerContraseñaPatron\frmContAdmin.resx">
+      <DependentUpon>frmContAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Vistas_Dispositivos\VerContraseñaPatron\frmVerPatron.resx">
+      <DependentUpon>frmVerPatron.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Vistas_Estadisticas\frmMovXMes.resx">
+      <DependentUpon>frmMovXMes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Vistas_Estadisticas\frmOrdXMes.resx">
+      <DependentUpon>frmOrdXMes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Vistas_Movimientos\Agregar\frmAgregarMovimiento.resx">
+      <DependentUpon>frmAgregarMovimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Vistas_Movimientos\Filtros\frmFiltrosMov.resx">
+      <DependentUpon>frmFiltrosMov.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Vistas_Movimientos\Home\frmMovimientosHome.resx">
+      <DependentUpon>frmMovimientosHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Vistas_OrdenReparacion\Filtros\frmFiltrosOrden.resx">
+      <DependentUpon>frmFiltrosOrden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Vistas_OrdenReparacion\Imagen\frmVerImagen.resx">
+      <DependentUpon>frmVerImagen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Vistas_OrdenReparacion\Infn\frmInfnCliente.resx">
+      <DependentUpon>frmInfnCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Vistas_OrdenReparacion\Infn\frmInfnDispositivo.resx">
+      <DependentUpon>frmInfnDispositivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Vistas_OrdenReparacion\Infn\frmInfnOrden.resx">
+      <DependentUpon>frmInfnOrden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Vistas_OrdenReparacion\Seleccionar\frmSeleccionarDispositivoOrden.resx">
+      <DependentUpon>frmSeleccionarDispositivoOrden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Vistas_OrdenReparacion\Agregar\frmAgregarOrdenReparacion.resx">
+      <DependentUpon>frmAgregarOrdenReparacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Vistas_OrdenReparacion\GenerarMovimiento\frmGenerarMovimiento.resx">
+      <DependentUpon>frmGenerarMovimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Vistas_OrdenReparacion\Home\frmOrdenReparacionHome.resx">
+      <DependentUpon>frmOrdenReparacionHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Vistas_OrdenReparacion\Modificar\frmModificarOrdenReparacion.resx">
+      <DependentUpon>frmModificarOrdenReparacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Vistas_OrdenReparacion\WhatsApp\frmMensajeWhatsApp.resx">
+      <DependentUpon>frmMensajeWhatsApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -84,6 +446,221 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ProyectoBarloventoReparacel_TemporaryKey.pfx" />
+    <None Include="Resources\icono_estado_cancelado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_estado_terminado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_estado_en_proceso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_estado_pendiente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_ajustes_menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_inicio_menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_ordenes_menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_dispositivos_menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_perfil_usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_inicio_menu_claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_dispositivos_menu_claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_clientes_menu_claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_ajustes_menu_claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_clientes_menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_ordenes_menu_claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_tema_claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_tema_oscuro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_tema_claro_claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_tema_oscuro_claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_eliminar_claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_agregar_claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_agregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_modificar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_modificar_claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_agregar_dispositivo_claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_agregar_dispositivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_agregar_orden_claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_agregar_orden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono__dtgv_dispositivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_orden_asc_desc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_dtgv_dispositivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_dtgv_dispositivo_claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_dtgv_orden_claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_dtgv_orden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_mas_informacion_claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_mas_informacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_dtgv_informacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_aceptar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_aceptar_claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_orden_asc_desc_claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_dtgv_informacion_claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_seleccionar_claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_seleccionar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_pdf_claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_pdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_agregar_imagen_claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_agregar_imagen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_advertencia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_agregar_dispositivo_persona.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_agregar_dispositivo_persona_claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_agregar_dispositivo_empresa_claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_agregar_dispositivo_empresa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plantilla.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_guardar_claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icono.ico" />
+    <Content Include="MensajesSinLeer.py" />
+    <Content Include="MensajeWhatsApp.py" />
+    <None Include="Resources\icono_whatsapp_claro.png" />
+    <None Include="Resources\icono_dtgv_contraseña_claro.png" />
+    <None Include="Resources\icono_ola_claro.png" />
+    <None Include="Resources\icono_ola.png" />
+    <None Include="Resources\icono_python_claro.png" />
+    <None Include="Resources\icono_python.png" />
+    <None Include="Resources\icono_dtgv_contraseña.png" />
+    <None Include="Resources\icono_buscar.png" />
+    <None Include="Resources\imagen_logo.png" />
+    <None Include="Resources\icono_estadisticas.png" />
+    <None Include="Resources\icono_estadisticas_claro.png" />
+    <None Include="Resources\icono_movimientos.png" />
+    <None Include="Resources\icono_movimientos_claro.png" />
+    <None Include="Resources\icono_facturar.png" />
+    <None Include="Resources\icono_facturar_claro.png" />
+    <None Include="Resources\icono_resetear.png" />
+    <None Include="Resources\icono_resetear_claro.png" />
+    <None Include="Resources\icono_contraseña.png" />
+    <None Include="Resources\icono_contraseña_claro.png" />
+    <None Include="Resources\icono_patron.png" />
+    <None Include="Resources\icono_patron_claro.png" />
+    <None Include="Resources\icono_filtros.png" />
+    <None Include="Resources\icono_filtros_claro.png" />
+    <None Include="Resources\icono_whatsapp1.png" />
+    <None Include="Resources\icono_enviar_mensaje.png" />
+    <None Include="Resources\icono_enviar_mensaje_claro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

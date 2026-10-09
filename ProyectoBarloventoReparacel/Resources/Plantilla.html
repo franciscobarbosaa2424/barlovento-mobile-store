@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Orden de Reparación - Reparacel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.3;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .header {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .logo {
+            width: 100px;
+            height: 50px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .order-number {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .info-label {
+            font-weight: normal;
+        }
+
+
+        .signature-line {
+            border-top: 1px solid black;
+            margin-top: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td style="width: 20%;"></td>
+            <td style="width: 60%;">
+                <table class="header">
+                    <tr><td>ORDEN DE REPARACIÓN</td></tr>
+
+                </table>
+                <table style="text-align: center">
+                    <tr><td>REPARACEL 091 90 00 90</td></tr>
+                    <tr><td>Gral. Flores y Alberto Mendez 198</td></tr>
+                    <tr><td>Colonia del Sacramento</td></tr>
+                </table>
+            </td>
+            <td style="width: 20%;" class="info-label">Nro. Órden @ORDEN</td>
+        </tr>
+    </table>
+
+    <table style="margin-top: 15px;">
+        <tr>
+            <td class="info-label">Fecha de Ingreso: @FECHAINGRESO</td>
+            <td class="info-label">Recepcionado por: Taller</td>
+        </tr>
+    </table>
+
+    <table style="margin-top: 20px;">
+        <tr>
+            <td colspan="2"><strong>INFORMACIÓN DEL CLIENTE:</strong></td>
+        </tr>
+        <tr>
+            <td class="info-label">Nombre: @NOMBRE</td>
+        </tr>
+        <tr>
+            <td class="info-label">Dirección: @DIRECCION</td>
+        </tr>
+        <tr>
+            <td class="info-label">Teléfono: @TELEFONO</td>
+        </tr>
+    </table>
+
+    <table style="margin-top: 25px;">
+        <tr>
+            <td colspan="4"><strong>INFORMACIÓN DEL EQUIPO:</strong></td>
+        </tr>
+        <tr>
+
+            <td class="info-label">Tipo de Equipo: @TIPOEQUIPO</td>
+            <td class="info-label">Modelo: @MODELO</td>
+        </tr>
+        <tr>
+            <td class="info-label">Marca: @MARCA</td>
+
+        </tr>
+        <tr>
+            <td class="info-label">Falla: @FALLA</td>
+
+        </tr>
+    </table>
+    <table style="margin-top: 15px;">
+        <tr>
+
+            <td class="info-value">Firma:______________________________</td>
+
+        </tr>
+    </table>
+    <table  style="margin-top: 30px;">
+        <tr>
+            <td style="width: 20%;"></td>
+            <td style="width: 60%;">
+                <table class="header">
+                    <tr><td>ORDEN DE REPARACIÓN</td></tr>
+
+                </table>
+                <table style="text-align: center">
+                    <tr><td>REPARACEL 091 90 00 90</td></tr>
+                    <tr><td>Gral. Flores y Alberto Mendez 198</td></tr>
+                    <tr><td>Colonia del Sacramento</td></tr>
+                </table>
+            </td>
+            <td style="width: 20%;" class="info-label">Nro. Órden @ORDEN</td>
+        </tr>
+    </table>
+
+    <table style="margin-top: 15px;">
+        <tr>
+            <td class="info-label">Fecha de Ingreso: @FECHAINGRESO</td>
+            <td class="info-label">Recepcionado por: Taller</td>
+        </tr>
+    </table>
+
+    <table style="margin-top: 20px;">
+        <tr>
+            <td colspan="2"><strong>INFORMACIÓN DEL CLIENTE:</strong></td>
+        </tr>
+        <tr>
+            <td class="info-label">Nombre: @NOMBRE</td>
+        </tr>
+        <tr>
+            <td class="info-label">Dirección: @DIRECCION</td>
+        </tr>
+        <tr>
+            <td class="info-label">Teléfono: @TELEFONO</td>
+        </tr>
+    </table>
+
+    <table style="margin-top: 25px;">
+        <tr>
+            <td colspan="4"><strong>INFORMACIÓN DEL EQUIPO:</strong></td>
+        </tr>
+        <tr>
+
+            <td class="info-label">Tipo de Equipo: @TIPOEQUIPO</td>
+            <td class="info-label">Modelo: @MODELO</td>
+        </tr>
+        <tr>
+            <td class="info-label">Marca: @MARCA</td>
+
+        </tr>
+        <tr>
+            <td class="info-label">Falla: @FALLA</td>
+
+        </tr>
+    </table>
+    <table style="margin-top: 15px;">
+        <tr>
+
+            <td class="info-value">Firma:______________________________</td>
+
+        </tr>
+    </table>
+</body>
+</html>
